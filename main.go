@@ -71,7 +71,7 @@ func main() {
 			fmt.Printf("Free disk space is too low: %d MB left\n", int(diskFree))
 		}
 
-		netFree := (totalNet - usedNet) / (1024 * 1024)
+		netFree := (totalNet - usedNet) / (1000 * 1000)
 		if usedNet > networkUsageLimit*totalNet {
 			fmt.Printf("Network bandwidth usage high: %d Mbit/s available\n", int(netFree))
 		}
