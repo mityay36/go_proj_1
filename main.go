@@ -68,7 +68,7 @@ func main() {
 
 		diskFree := (totalDisk - usedDisk) / (1024 * 1024)
 		if (totalDisk - usedDisk) < (1-diskSpaceLimit)*totalDisk {
-			fmt.Printf("Free disk space is too low: %d MB left\n", int(diskFree))
+			fmt.Printf("Free disk space is too low: %d Mb left\n", int(diskFree))
 		}
 
 		netFree := (totalNet - usedNet) / (1000 * 1000)
